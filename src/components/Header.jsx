@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import tempLogo from "../assets/logo/CapLogoBlack.png";
+import tempLogo from "../assets/Worklogo/CapLogoBlack.png";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,7 +67,7 @@ function Header() {
           </li>
           <li className="relative group group-hover:block">
             <Link
-              to="/TeamPage"
+              to="/"
               className="text-black font-extrabold  hover:text-blue-800 text-xs"
               onClick={scrollToTop}
             >
@@ -76,7 +76,7 @@ function Header() {
           </li>
           <li className="relative group group-hover:block">
             <Link
-              to="/Contact"
+              to="/"
               className="text-black font-extrabold  hover:text-blue-800 text-xs md:mr-10"
               onClick={scrollToTop}
             >
@@ -150,7 +150,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/TeamPage"
+                to="/"
                 className="text-black font-bold text-xl hover:text-lime-400"
                 onClick={toggleMobileMenu}
               >
@@ -159,7 +159,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/Contact"
+                to="/"
                 className="text-black font-bold text-xl hover:text-lime-400"
                 onClick={toggleMobileMenu}
               >
@@ -168,7 +168,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/Contact"
+                to="/"
                 className="text-black font-bold text-xl hover:text-lime-400"
                 onClick={toggleMobileMenu}
               >
