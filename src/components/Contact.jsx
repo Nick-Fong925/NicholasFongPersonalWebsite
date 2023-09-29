@@ -63,7 +63,7 @@ function Contact() {
 
   return (
     <div className=" flex items-center justify-center mt-10">
-      <div className="w-full md:w-1/2 p-8">
+      <div className=" w-3/4 p-8">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider text-violet-600">
           Contact Me
         </h1>

@@ -5,6 +5,7 @@ import Projects from "../components/Projects";
 import Info from "../components/Info";
 import NicholasFongResume from "../assets/Resume/Nicholas_Fong_Resume.pdf";
 
+
 function Landing() {
   const [activeSection, setActiveSection] = useState("about");
 
@@ -46,7 +47,8 @@ function Landing() {
 
   return (
     <>
-      <div className="flex max-w-screen-lg">
+    <div className="flex justify-center">
+      <div className="flex flex-row max-w-screen-lg justify-center">
         {/* Sidebar */}
         <div className="w-30 h-screen fixed top-0 left-0 overflow-y-auto mt-20">
           <ul className="p-4">
@@ -138,7 +140,7 @@ function Landing() {
             <Info />
           </div>
           <div id="work-experience-section">
-            
+            <WorkExperience/>
           </div>
           <div id="projects-section">
             <Projects />
@@ -147,6 +149,7 @@ function Landing() {
             <Contact />
           </div>
         </div>
+      </div>
       </div>
     </>
   );

@@ -11,14 +11,13 @@ import Python from "../assets/CodingLogos2/Python.png";
 import ReactLogo from "../assets/CodingLogos2/React.png";
 import Tailwind from "../assets/CodingLogos2/Tailwind.png";
 import SQL from "../assets/CodingLogos2/SQL.png";
+import Github from "../assets/Logos/GithubLogo.png";
 
 function CodingLanguages() {
   const languages = [
     { logo: JavaScript, name: "JavaScript" },
     { logo: Java, name: "Java" },
     { logo: C, name: "C" },
-    { logo: CSS, name: "CSS" },
-
     { logo: Python, name: "Python" },
   ];
 
@@ -36,6 +35,7 @@ function CodingLanguages() {
   ];
 
   const developerTools = [
+    { logo: Github, name: "Github"},
     { logo: Jira, name: "Jira" },
     { logo: Netlify, name: "Netlify" },
   ];
@@ -46,7 +46,7 @@ function CodingLanguages() {
       <h2 className="mb-5 font-bold">Languages</h2>
         {languages.map((lang, index) => (
           <div key={index} className="flex items-center mb-4 font-semibold">
-            <img src={lang.logo} alt={lang.name} className="w-8 h-8 mr-2" />
+            <img src={lang.logo} alt={lang.name} className="w-8 h-8 mr-4" />
             <span>{lang.name}</span>
           </div>
         ))}
@@ -55,7 +55,7 @@ function CodingLanguages() {
       <h2 className="mb-5 font-bold">Frontend</h2>
         {frontendFrameworks.map((framework, index) => (
           <div key={index} className="flex items-center mb-4 font-semibold">
-            <img src={framework.logo} alt={framework.name} className="w-8 h-8 mr-2" />
+            <img src={framework.logo} alt={framework.name} className="w-8 h-8 mr-4" />
             <span>{framework.name}</span>
           </div>
         ))}
@@ -64,7 +64,7 @@ function CodingLanguages() {
       <h2 className="mb-5 font-bold">Backend</h2>
         {backendFrameworks.map((framework, index) => (
           <div key={index} className="flex items-center mb-4 font-semibold">
-            <img src={framework.logo} alt={framework.name} className="w-8 h-8 mr-2" />
+            <img src={framework.logo} alt={framework.name} className="w-8 h-8 mr-4" />
             <span>{framework.name}</span>
           </div>
         ))}
@@ -73,7 +73,7 @@ function CodingLanguages() {
       <h2 className="mb-5 font-bold">Developer Tools</h2>
         {developerTools.map((tool, index) => (
           <div key={index} className="flex items-center mb-4 font-semibold">
-            <img src={tool.logo} alt={tool.name} className="w-8 h-8 mr-2" />
+            <img src={tool.logo} alt={tool.name} className="w-8 h-8 mr-4" />
             <span>{tool.name}</span>
           </div>
         ))}

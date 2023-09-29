@@ -6,17 +6,29 @@ import schoolIcon from "../assets/Logos/schoolIcon.png";
 import DegreeLogo from "../assets/Logos/DegreeLogo.png";
 import GoalsettingIcon from "../assets/Logos/GoalsettingIcon.png";
 import CodingLanguages from "../components/CodingLanguages";
+import TypewriterText from "./TyperWriter";
+
 
 function Info() {
+
+  
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center mt-20 mb-10">
-        {/* Circular border for the photo */}
-        <div className="ml-10 w-48 h-48 px-2 py-2 md:w-56 md:h-58 rounded-full border-4 border-gray-300 overflow-hidden">
-          <img src={MyPhoto} alt="Nicholas Fong" className="w-full h-full object-cover" />
-        </div>
+     <div className="flex flex-col md:flex-row items-center mt-20 mb-10">
+  {/* Circular border for the photo */}
+  <div className="ml-10 w-48 h-48 px-2 py-2 md:w-56 md:h-58 rounded-full border-4 border-gray-300 overflow-hidden">
+    <img
+      src={MyPhoto}
+      alt="Nicholas Fong"
+      className="w-full h-full object-contain "
+    />
+  </div>
+  <div className="md:ml-10">
+    <TypewriterText />
+  </div>
 
-        {/* Text on the right side */}
+      {/*
+
         <div className="md:ml-10">
           <h2 className="mb-5 font-semibold text-xl">Hi, my name is,</h2>
           <p className="text-5xl mb-5 font-bold">Nicholas Fong.</p>
@@ -24,6 +36,7 @@ function Info() {
             I aim to address <span className="text-violet-600">business needs</span> with <span className="text-violet-600">technology</span>.
           </p>
         </div>
+        */}
       </div>
 
       <div className="flex space-x-20 mt-14 mb-16 items-center justify-center">

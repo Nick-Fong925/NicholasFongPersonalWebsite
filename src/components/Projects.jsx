@@ -1,10 +1,19 @@
 import BiteBook from "../assets/ProjectImages/BiteBook.png";
 import CAP from "../assets/ProjectImages/CAP.png";
 import DailyBoost from "../assets/ProjectImages/DailyBoost.png";
-import ExpressLogo from "../assets/CodingLogos/ExpressLogo.png";
-import MongoDBLogo from "../assets/CodingLogos/MongoDBLogo.png";
-import ReactLogo from "../assets/CodingLogos/ReactLogo.png";
-import TailwindCSSLogo from "../assets/CodingLogos/TailwindCSSLogo.png";
+import C from "../assets/CodingLogos2/C.png";
+import CSS from "../assets/CodingLogos2/CSS.png";
+import Express from "../assets/CodingLogos2/Express.png";
+import HTML from "../assets/CodingLogos2/HTML.png";
+import JavaScript from "../assets/CodingLogos2/JavaScript.png";
+import Java from "../assets/CodingLogos2/Java.png";
+import Jira from "../assets/CodingLogos2/Jira.png";
+import MongoDB from "../assets/CodingLogos2/MongoDB.png";
+import Netlify from "../assets/CodingLogos2/Netlify.png";
+import Python from "../assets/CodingLogos2/Python.png";
+import ReactLogo from "../assets/CodingLogos2/React.png";
+import Tailwind from "../assets/CodingLogos2/Tailwind.png";
+import SQL from "../assets/CodingLogos2/SQL.png";
 import Project from "./Project";
 
 function Projects() {
@@ -18,9 +27,9 @@ function Projects() {
           imgSrc: BiteBook,
           codingLogos: {
             react: ReactLogo,
-            tailwindcss: TailwindCSSLogo,
-            express: ExpressLogo,
-            mongodb: MongoDBLogo,
+            tailwindcss: Tailwind,
+            express: Express,
+            mongodb: MongoDB,
           },
         },
 
@@ -33,9 +42,9 @@ function Projects() {
             demoLink:"",
             codingLogos: {
               react: ReactLogo,
-              tailwindcss: TailwindCSSLogo,
-              express: ExpressLogo,
-              mongodb: MongoDBLogo,
+              tailwindcss: Tailwind,
+              express: Express,
+              mongodb: MongoDB,
             },
           },
 
@@ -49,7 +58,7 @@ function Projects() {
           demoLink:"https://nick-fong925.github.io/CAPWeb/",
           codingLogos: {
             react: ReactLogo,
-            tailwindcss: TailwindCSSLogo,
+            tailwindcss: Tailwind,
 
           },
         },
