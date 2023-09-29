@@ -11,7 +11,7 @@ function CAPWorkExperience() {
           <p className="mt-2 text-black text-xs font-semibold">Vancouver, B.C</p>
         </div>
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold mb-5 text-violet-600">UBC Campus Ambassador Program</h2>
+          <h2 className="text-2xl font-bold mb-5 text-violet-800">UBC Campus Ambassador Program</h2>
           <p className="text-black text-m font-bold">Student Director of Technology</p>
           <p className="text-black text-xs mt-2"> {`>`} Led UI design team by modeling and implementing high-fidelity mock-ups, using prototyping tools, and
 collaborating with cross-functional teams to deliver intuitive and visually appealing user interfaces</p>

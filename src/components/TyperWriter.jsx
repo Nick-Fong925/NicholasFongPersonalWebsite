@@ -8,7 +8,7 @@ const TypewriterText = () => {
   const textArray = [
     'Hi, my name is,',
     'Nicholas Fong.',
-    'I aim to address business needs with technology.',
+    'Aspiring Software Engineer',
   ];
 
   useEffect(() => {
@@ -40,8 +40,8 @@ const TypewriterText = () => {
   return (
     <div className="md:ml-10">
       <h2 className="mb-5 font-semibold text-xl">{line1}</h2>
-      <p className="text-5xl mb-5 font-bold">{line2}</p>
-      <p className="text-3xl font-bold text-violet-500">
+      <p className="text-5xl mb-5 font-bold text-violet-800">{line2}</p>
+      <p className="text-3xl font-bold">
         {line3}
       </p>
     </div>

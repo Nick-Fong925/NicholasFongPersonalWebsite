@@ -14,7 +14,7 @@ function CAPWorkExperience() {
 
         </div>
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold mb-5 text-violet-600">Binggrae</h2>
+          <h2 className="text-2xl font-bold mb-5 text-violet-800">Binggrae</h2>
           <p className="text-black text-m font-bold">Full Stack Software Developer Intern</p>
           <p className="text-black text-xs mt-2"> {`>`} Contributed to the creation of an e-commerce platform tailored to cater to the young adult age demographic while
 showcasing and marketing frozen goods to a potential customer base exceeding 700,000</p>

@@ -45,7 +45,7 @@ function CodingLanguages() {
   ];
 
   return (
-    <div className="flex flex-col border-2 border-violet-500 py-10 rounded-xl mt-16 mb-20 md:flex-row">
+    <div className="flex flex-col border-4 border-violet-800 py-10 rounded-xl mt-16 mb-20 md:flex-row">
       <div className="ml-16 md:w-1/4">
       <h2 className="mb-5 font-bold">Languages</h2>
         {languages.map((lang, index) => (

@@ -68,8 +68,8 @@ function Landing() {
                 }}
                 className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "about"
-                    ? "bg-violet-600 text-white"
-                    : "hover:bg-violet-600 hover:text-white"
+                    ? "bg-violet-800 text-white"
+                    : "hover:bg-violet-800 hover:text-white"
                 }`}
               >
                 About Me
@@ -87,8 +87,8 @@ function Landing() {
                 }}
                 className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "experience"
-                    ? "bg-violet-600 text-white"
-                    : "hover:bg-violet-600 hover:text-white"
+                    ? "bg-violet-800 text-white"
+                    : "hover:bg-violet-800 hover:text-white"
                 }`}
               >
                 Experience
@@ -106,8 +106,8 @@ function Landing() {
                 }}
                 className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "projects"
-                    ? "bg-violet-600 text-white"
-                    : "hover:bg-violet-600 hover:text-white"
+                    ? "bg-violet-800 text-white"
+                    : "hover:bg-violet-800 hover:text-white"
                 }`}
               >
                 Projects
@@ -125,15 +125,15 @@ function Landing() {
                 }}
                 className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "contact"
-                    ? "bg-violet-600 text-white font-bold"
-                    : "hover:bg-violet-600 hover:text-white"
+                    ? "bg-violet-800 text-white font-bold"
+                    : "hover:bg-violet-800 hover:text-white"
                 }`}
               >
                 Contact
               </a>
             </li>
             <a href={NicholasFongResume} download="Nicholas_Fong_Resume.pdf">
-            <li className="block px-4 mb-2 py-2 border-4  border-violet-600 rounded-lg font-bold cursor-pointer">
+            <li className="block px-4 mb-2 py-2 border-4  border-violet-800 rounded-lg font-bold cursor-pointer">
               Resume
             </li>
           </a>
