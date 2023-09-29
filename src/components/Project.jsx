@@ -1,22 +1,46 @@
 import GithubLogo from "../assets/Logos/GithubLogo.png";
+import DemoLogo from "../assets/Logos/demo.png";
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 
-function Project({ title, description, githubLink, imgSrc, codingLogos }) {
+function Project({ title, description, githubLink, demoLink, imgSrc, codingLogos }) {
+  const [imageStyle, setImageStyle] = useState({});
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = imgSrc;
+    img.onload = () => {
+      const aspectRatio = img.width / img.height;
+
+      if (aspectRatio > 1) {
+        // Horizontal photo
+        setImageStyle({ width: "90%", height: "auto" });
+      } else {
+        // Vertical photo
+        setImageStyle({ width: "50%", height: "auto" });
+      }
+    };
+  }, [imgSrc]);
+
   return (
-    <div className=" py-24 lg:py-16">
-      <div className="container mx-auto px-4 md:flex flex-row items-center">
-        <div className="ml-6 md:w-1/2 mr-10">
-          <img src={imgSrc} alt={title} className="rounded-lg mr-0 md:mr-10" />
+    <div className="py-5 l6">
+      <div className="container py-10 mx-auto px-4 md:flex flex-row items-center rounded-xl bg-gray-100">
+        <div className="md:w-1/2 flex justify-center md:mr-10">
+          <img src={imgSrc} alt={title} className="rounded-lg object-fit" style={imageStyle} />
         </div>
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold  mb-5 text-black">{title}</h2>
+          <h2 className="text-2xl font-bold mb-5 text-violet-600">{title}</h2>
           <p className="text-black text-xs">{description}</p>
-          <div className="flex space-x-4 mt-10">
+          <div className="flex space-x-4 mt-5 items-center">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <img src={GithubLogo} alt="Github Icon" className="w-8 h-8" />
+              <img src={GithubLogo} alt="Github Icon" className="w-6 h-6" />
+            </a>
+            <p className="text-xs font-semibold mr-5">Repository</p>
+            <a href={demoLink} target="_blank" rel="noopener noreferrer">
+              <img src={DemoLogo} alt="Github Icon" className="w-12 h-12" />
             </a>
           </div>
-          <div className="flex space-x-4 mt-10">
+          <div className="flex space-x-4 mt-5 items-center">
             {Object.keys(codingLogos).map((key) => (
               <img key={key} src={codingLogos[key]} alt={`${key} Logo`} className="w-15 h-8" />
             ))}
@@ -31,6 +55,7 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   githubLink: PropTypes.string.isRequired,
+  demoLink: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired, 
   codingLogos: PropTypes.object.isRequired,
 };

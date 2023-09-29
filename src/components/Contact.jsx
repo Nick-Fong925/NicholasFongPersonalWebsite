@@ -43,7 +43,7 @@ function Contact() {
 
       emailjs
         .send(
-          "service_m43gmewp",
+          "service_m43gmew",
           "template_tw4kah9",
           templateParams,
           "dx3VanLfrUMiH-9Sn"
@@ -62,9 +62,9 @@ function Contact() {
   };
 
   return (
-      <div className="container mx-auto px-4 md:flex flex-row items-center">
+    <div className=" flex items-center justify-center mt-10">
       <div className="w-full md:w-1/2 p-8">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider text-blue-950">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider text-violet-600">
           Contact Me
         </h1>
         <h2 className="text-black text-base md:text-xs mt-4">
@@ -78,7 +78,7 @@ function Contact() {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-3 text-base border-b-2 w-full focus:outline-none border-black py-1 text-gray-800 placeholder-gray-500"
+              className="mt-3 text-base border-b-2 w-full focus:outline-none border-black py-1 text-gray-800 placeholder-gray-500 "
               placeholder="Name"
               required
             />
@@ -86,13 +86,13 @@ function Contact() {
           </div>
 
           {/* Email input */}
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-3 text-base border-b-2 w-full focus:outline-none border-black py-1 text-gray-800 placeholder-gray-500"
+              className="mt-3 text-base border-b-2 w-full focus:outline-none border-black py-1 text-gray-800 placeholder-gray-500 "
               placeholder="Email"
               required
             />
@@ -105,7 +105,7 @@ function Contact() {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="mt-3 text-base border-b-2 w-full focus:outline-none border-black py-2 text-gray-800 placeholder-gray-500"
+              className="mt-3 mb-3 text-base border-b-2 w-full focus:outline-none border-black py-2 text-gray-800 placeholder-gray-500"
               rows={1}
               placeholder="Message"
               required
@@ -116,9 +116,9 @@ function Contact() {
           {/* Submit button */}
           <button
             type="submit"
-            className="font-bold px-6 py-3 text-black rounded-lg bg-blue-950 hover:text-black transition duration-300"
+            className="font-bold px-6 py-1 text-black rounded-lg border-2 border-blue-950 hover:text-black transition duration-300"
           >
-            Submit
+            Get Connected!
           </button>
         </form>
       </div>
