@@ -60,7 +60,7 @@ function Landing() {
                     behavior: "smooth",
                   });
                 }}
-                className={`block px-4 py-2 mb-2 rounded-lg font-semibold ${
+                className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "about"
                     ? "bg-violet-600 text-white"
                     : "hover:bg-violet-600 hover:text-white"
@@ -79,7 +79,7 @@ function Landing() {
                     behavior: "smooth",
                   });
                 }}
-                className={`block px-4 py-2 mb-2 rounded-lg font-semibold ${
+                className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "experience"
                     ? "bg-violet-600 text-white"
                     : "hover:bg-violet-600 hover:text-white"
@@ -98,7 +98,7 @@ function Landing() {
                     behavior: "smooth",
                   });
                 }}
-                className={`block px-4 py-2 mb-2 rounded-lg font-semibold ${
+                className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "projects"
                     ? "bg-violet-600 text-white"
                     : "hover:bg-violet-600 hover:text-white"
@@ -117,9 +117,9 @@ function Landing() {
                     behavior: "smooth",
                   });
                 }}
-                className={`block px-4 py-2 mb-2 rounded-lg font-semibold ${
+                className={`block px-4 py-2 mb-2 rounded-lg font-bold ${
                   activeSection === "contact"
-                    ? "bg-violet-600 text-white"
+                    ? "bg-violet-600 text-white font-bold"
                     : "hover:bg-violet-600 hover:text-white"
                 }`}
               >
@@ -134,7 +134,7 @@ function Landing() {
           </ul>
         </div>
         <div className="ml-40 p-4">
-          <div>
+          <div id="about-section">
             <Info />
           </div>
           <div id="work-experience-section">
