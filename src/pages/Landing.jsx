@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
-import WorkExperience from "../components/WorkExperience";
+import WorkExperience from "../components/CAPWorkExperience";
+import BinggraeWorkExperience from "../components/BinggraeWorkExperience";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Info from "../components/Info";
 import NicholasFongResume from "../assets/Resume/Nicholas_Fong_Resume.pdf";
 
 
+
 function Landing() {
   const [activeSection, setActiveSection] = useState("about");
+
 
   // Function to handle scroll and update active section
   const handleScroll = () => {
@@ -44,6 +47,7 @@ function Landing() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
 
   return (
     <>
@@ -140,6 +144,7 @@ function Landing() {
             <Info />
           </div>
           <div id="work-experience-section">
+            <BinggraeWorkExperience/>
             <WorkExperience/>
           </div>
           <div id="projects-section">

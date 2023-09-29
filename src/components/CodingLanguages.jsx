@@ -12,6 +12,8 @@ import ReactLogo from "../assets/CodingLogos2/React.png";
 import Tailwind from "../assets/CodingLogos2/Tailwind.png";
 import SQL from "../assets/CodingLogos2/SQL.png";
 import Github from "../assets/Logos/GithubLogo.png";
+import PHP from "../assets/CodingLogos2/PHP.png";
+import VSCODE from "../assets/CodingLogos2/VSCODE.png";
 
 function CodingLanguages() {
   const languages = [
@@ -32,10 +34,12 @@ function CodingLanguages() {
     { logo: Express, name: "Express" },
     { logo: MongoDB, name: "MongoDB" },
     { logo: SQL, name: "SQL" },
+    { logo: PHP, name: "PHP" },
   ];
 
   const developerTools = [
     { logo: Github, name: "Github"},
+    {logo: VSCODE, name: "VS Code"},
     { logo: Jira, name: "Jira" },
     { logo: Netlify, name: "Netlify" },
   ];
