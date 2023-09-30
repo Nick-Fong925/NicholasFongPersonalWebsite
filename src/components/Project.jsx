@@ -36,14 +36,16 @@ function Project({ title, description, githubLink, demoLink, imgSrc, codingNames
               <img src={GithubLogo} alt="Github Icon" className="w-6 h-6" />
             </a>
             <p className="text-xs font-semibold mr-5">Repository</p>
-            <a href={demoLink} target="_blank" rel="noopener noreferrer">
-              <img src={DemoLogo} alt="Github Icon" className="w-12 h-12" />
-            </a>
+            {demoLink !== "" && (
+              <a href={demoLink} target="_blank" rel="noopener noreferrer">
+                <img src={DemoLogo} alt="Demo Icon" className="w-12 h-12" />
+              </a>
+            )}
           </div>
           <div className="mt-5">
             <div className="grid grid-cols-2 md:grid-cols-2 gap-2 lg:grid-cols-4">
               {codingNames.map((name, index) => (
-                <div key={index} className="text-xs font-semibold border rounded-lg border-violet-800 px-2 py-1 hover:bg-violet-800 hover:text-white">
+                <div key={index} className="text-xs font-bold border-2 rounded-lg border-violet-800 px-2 py-1 hover:bg-violet-800 hover:text-white">
                   {name}
                 </div>
               ))}

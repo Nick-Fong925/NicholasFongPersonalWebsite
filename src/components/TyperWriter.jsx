@@ -4,6 +4,7 @@ const TypewriterText = () => {
   const [line1, setLine1] = useState('');
   const [line2, setLine2] = useState('');
   const [line3, setLine3] = useState('');
+  const [showBlinkingI, setShowBlinkingI] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const textArray = [
     'Hi, my name is,',
@@ -14,17 +15,21 @@ const TypewriterText = () => {
   useEffect(() => {
     if (currentIndex < textArray.length) {
       const text = textArray[currentIndex];
-      const delay = currentIndex === 0 ? 0 : currentIndex === 1 ? 1000 : 2000;
+    
       const setTextFunction =
         currentIndex === 0 ? setLine1 : currentIndex === 1 ? setLine2 : setLine3;
 
       let charIndex = 0;
-      setTextFunction(text.charAt(0)); // Initialize with the first character
+      setTextFunction(' '.repeat(text.length)); // Initialize with spaces
 
       const intervalId = setInterval(() => {
         charIndex++;
-        if (charIndex < text.length) {
-          setTextFunction((prevText) => prevText + text.charAt(charIndex));
+        if (charIndex <= text.length) {
+          setTextFunction((prevText) => {
+            const newText = prevText.split('');
+            newText[charIndex - 1] = text.charAt(charIndex - 1);
+            return newText.join('');
+          });
         } else {
           clearInterval(intervalId);
           setTimeout(() => {
@@ -34,8 +39,25 @@ const TypewriterText = () => {
       }, 70); // Typing speed
 
       return () => clearInterval(intervalId);
+    } else {
+      // After the three lines are typed, show the blinking "I"
+      setShowBlinkingI(true);
     }
   }, [currentIndex]);
+
+  // Create a separate useEffect for the blinking "I"
+  useEffect(() => {
+    if (showBlinkingI) {
+      const intervalId = setInterval(() => {
+        // Toggle the "I" on and off
+        setLine3((prevText) =>
+          prevText.endsWith('I') ? prevText.slice(0, -1) : prevText + 'I'
+        );
+      }, 400); // Adjust the blinking speed as needed
+
+      return () => clearInterval(intervalId);
+    }
+  }, [showBlinkingI]);
 
   return (
     <div className="md:ml-10">

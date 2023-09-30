@@ -2,9 +2,19 @@ import Project from "./Project";
 import BiteBook from "../assets/ProjectImages/BiteBook.png";
 import CAP from "../assets/ProjectImages/CAP.png";
 import DailyBoost from "../assets/ProjectImages/DailyBoost.png";
+import PortfolioWebsite from "../assets/ProjectImages/PersonalWebsite.png"
 
 function Projects() {
   const ProjectData = [
+    {
+      title: "CAP Website",
+      description:
+        "The Campus Ambassador Program Website is a dynamic online platform designed to serve as an effective marketing tool for showcasing campus events and highlighting club members. This website aims to create a vibrant online presence for campus activities, fostering engagement and participation among students.",
+      githubLink: "https://github.com/Nick-Fong925/CAPWeb",
+      imgSrc: CAP,
+      demoLink: "https://nick-fong925.github.io/CAPWeb/",
+      codingNames: ["React.js", "Tailwind.js"], // Updated to an array of coding names
+    },
     {
       title: "BiteBook",
       description:
@@ -24,12 +34,12 @@ function Projects() {
       codingNames: ["React.js", "Tailwind.js", "Express.js", "MongoDB"], // Updated to an array of coding names
     },
     {
-      title: "CAP Website",
+      title: "Portfolio Website",
       description:
-        "The Campus Ambassador Program Website is a dynamic online platform designed to serve as an effective marketing tool for showcasing campus events and highlighting club members. This website aims to create a vibrant online presence for campus activities, fostering engagement and participation among students.",
-      githubLink: "https://github.com/Nick-Fong925/CAPWeb",
-      imgSrc: CAP,
-      demoLink: "https://nick-fong925.github.io/CAPWeb/",
+        "The Personal Portfolio Website project aims to create an online platform that showcases an individual's skills, achievements, and work samples. This website will serve as a digital resume, allowing the owner to present their professional identity to potential employers, clients, or collaborators. The primary goal is to create an engaging and user-friendly web presence that highlights the individual's talents and accomplishments.",
+      githubLink: "https://github.com/Nick-Fong925/NicholasFongPersonalWebsite",
+      imgSrc: PortfolioWebsite,
+      demoLink: "",
       codingNames: ["React.js", "Tailwind.js"], // Updated to an array of coding names
     },
   ];

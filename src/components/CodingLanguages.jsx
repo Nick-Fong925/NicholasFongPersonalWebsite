@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import C from '../assets/CodingLogos2/C.png';
 import CSS from '../assets/CodingLogos2/CSS.png';
 import Express from '../assets/CodingLogos2/Express.png';
@@ -14,16 +13,8 @@ import Tailwind from '../assets/CodingLogos2/Tailwind.png';
 import SQL from '../assets/CodingLogos2/SQL.png';
 import Github from '../assets/Logos/GithubLogo.png';
 import PHP from '../assets/CodingLogos2/PHP.png';
-import VSCODE from '../assets/CodingLogos2/VSCODE.png';
 
 function CodingLanguages() {
-  const [activeSection, setActiveSection] = useState('Languages');
-
-  const toggleSection = (sectionName) => {
-    setActiveSection(activeSection === sectionName ? null : sectionName);
-  };
-
-
   const languages = [
     { logo: JavaScript, name: 'JavaScript' },
     { logo: Java, name: 'Java' },
@@ -47,7 +38,6 @@ function CodingLanguages() {
 
   const developerTools = [
     { logo: Github, name: 'Github' },
-    { logo: VSCODE, name: 'VS Code' },
     { logo: Jira, name: 'Jira' },
     { logo: Netlify, name: 'Netlify' },
   ];
@@ -55,73 +45,71 @@ function CodingLanguages() {
   return (
     <div className="py-10 rounded-xl mt-16 md:flex flex-row md:border-4 md:border-violet-800 md:mb-20">
       {/* Buttons for Mobile */}
-      <div className="md:hidden text-center">
-        <button
-          className={`bg-violet-600 hover:bg-violet-900 text-white font-bold py-1 px-2 rounded m-1 ${activeSection === 'Languages' ? 'bg-blue-600' : ''}`}
-          onClick={() => toggleSection('Languages')}
-        >
-          Languages
-        </button>
-        <button
-          className={`bg-violet-600 hover:bg-violet-900 text-white font-bold py-1 px-2 rounded m-1 ${activeSection === 'Frontend' ? 'bg-blue-600' : ''}`}
-          onClick={() => toggleSection('Frontend')}
-        >
-          Frontend
-        </button>
-        <button
-          className={`bg-violet-600 hover:bg-violet-900 text-white font-bold py-1 px-2 rounded m-1 ${activeSection === 'Backend' ? 'bg-blue-600' : ''}`}
-          onClick={() => toggleSection('Backend')}
-        >
-          Backend
-        </button>
-        <button
-          className={`bg-violet-600 hover:bg-violet-900 text-white font-bold py-1 px-2 rounded m-1 ${activeSection === 'Developer Tools' ? 'bg-blue-600' : ''}`}
-          onClick={() => toggleSection('Developer Tools')}
-        >
-          Developer Tools
-        </button>
-      </div>
 
       {/* Languages Section */}
-      <div className={`ml-16 md:w-1/4 ${activeSection === 'Languages' || !activeSection ? 'block' : 'hidden'}`}>
-        <h2 className="mb-5 font-bold hidden md:block">Languages</h2>
+      <div className="md:ml-5 lg:ml-16 w-full md:w-1/4">
+        <h2 className="mb-5 font-bold">Languages</h2>
         {languages.map((lang, index) => (
-          <div key={index} className="ml-5 mt-10 md:mt-0 flex items-center mb-4 font-semibold">
-            <img src={lang.logo} alt={lang.name} className="w-8 h-8 mr-4" />
-            <span>{lang.name}</span>
+          <div
+            key={index}
+            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+              // Add classes for smaller logos on md screens
+              index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
+            }`}
+          >
+            <img src={lang.logo} alt={lang.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
+            <span className="md:text-xs lg:text-m">{lang.name}</span>
           </div>
         ))}
       </div>
 
       {/* Frontend Section */}
-      <div className={`ml-16 md:w-1/4 ${activeSection === 'Frontend' || !activeSection ? 'block' : 'hidden'}`}>
-        <h2 className="mb-5 font-bold hidden md:block">Frontend</h2>
+      <div className="ml-16 w-full md:w-1/4">
+        <h2 className="mb-5 font-bold">Frontend</h2>
         {frontendFrameworks.map((framework, index) => (
-          <div key={index} className="ml-5 mt-10 md:mt-0 flex items-center mb-4 font-semibold">
-            <img src={framework.logo} alt={framework.name} className="w-8 h-8 mr-4" />
-            <span>{framework.name}</span>
+          <div
+            key={index}
+            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+              // Add classes for smaller logos on md screens
+              index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
+            }`}
+          >
+            <img src={framework.logo} alt={framework.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
+            <span className="md:text-xs lg:text-m">{framework.name}</span>
           </div>
         ))}
       </div>
 
       {/* Backend Section */}
-      <div className={`ml-16 md:w-1/4 ${activeSection === 'Backend' || !activeSection ? 'block' : 'hidden'}`}>
-        <h2 className="font-bold hidden md:block">Backend</h2>
+      <div className="ml-16 w-full md:w-1/4">
+        <h2 className="mb-5 font-bold">Backend</h2>
         {backendFrameworks.map((framework, index) => (
-          <div key={index} className="ml-5 mt-10 md:mt-0 flex items-center mb-4 font-semibold">
-            <img src={framework.logo} alt={framework.name} className="w-8 h-8 mr-4" />
-            <span>{framework.name}</span>
+          <div
+            key={index}
+            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+              // Add classes for smaller logos on md screens
+              index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
+            }`}
+          >
+            <img src={framework.logo} alt={framework.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
+            <span className="md:text-xs lg:text-m">{framework.name}</span>
           </div>
         ))}
       </div>
 
       {/* Developer Tools Section */}
-      <div className={`ml-16 md:w-1/4 ${activeSection === 'Developer Tools' || !activeSection ? 'block' : 'hidden'}`}>
-        <h2 className="mb-5 font-bold hidden md:block">Developer Tools</h2>
+      <div className="ml-16 w-full md:w-1/4 mr-20">
+        <h2 className="mb-5 font-bold">Developer Tools</h2>
         {developerTools.map((tool, index) => (
-          <div key={index} className="ml-5 mt-10 md:mt-0 flex items-center mb-4 font-semibold">
-            <img src={tool.logo} alt={tool.name} className="w-8 h-8 mr-4" />
-            <span>{tool.name}</span>
+          <div
+            key={index}
+            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+              // Add classes for smaller logos on md screens
+              index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
+            }`}
+          >
+            <img src={tool.logo} alt={tool.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
+            <span className="md:text-xs lg:text-m">{tool.name}</span>
           </div>
         ))}
       </div>

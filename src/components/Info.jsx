@@ -1,5 +1,5 @@
 import MyPhoto from "../assets/MyPhoto/NicholasFongPhoto.png";
-
+import CodingLanguagesMobile from "./CodingLanguagesMobile";
 import CodingLanguages from "../components/CodingLanguages";
 import TypewriterText from "./TyperWriter";
 
@@ -42,7 +42,8 @@ function Info() {
 
       </div>
       
-<CodingLanguages/>
+<div className="hidden md:block"><CodingLanguages/></div>
+<div className="md:hidden"><CodingLanguagesMobile/></div>
     </>
   );
 }
