@@ -3,7 +3,7 @@ import DemoLogo from "../assets/Logos/demo.png";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
-function Project({ title, description, githubLink, demoLink, imgSrc, codingLogos }) {
+function Project({ title, description, githubLink, demoLink, imgSrc, codingNames }) {
   const [imageStyle, setImageStyle] = useState({});
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function Project({ title, description, githubLink, demoLink, imgSrc, codingLogos
   return (
     <div className="py-5 l6">
       <div className="container py-10 mx-auto px-4 md:flex flex-row items-center rounded-xl bg-gray-100">
-        <div className="md:w-1/2 flex justify-center md:mr-10">
+        <div className="mb-5 md:w-1/2 flex justify-center md:mr-10">
           <img src={imgSrc} alt={title} className="rounded-lg object-fit" style={imageStyle} />
         </div>
         <div className="md:w-1/2">
@@ -40,10 +40,14 @@ function Project({ title, description, githubLink, demoLink, imgSrc, codingLogos
               <img src={DemoLogo} alt="Github Icon" className="w-12 h-12" />
             </a>
           </div>
-          <div className="flex space-x-4 mt-5 items-center">
-            {Object.keys(codingLogos).map((key) => (
-              <img key={key} src={codingLogos[key]} alt={`${key} Logo`} className="w-15 h-8" />
-            ))}
+          <div className="mt-5">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-2 lg:grid-cols-4">
+              {codingNames.map((name, index) => (
+                <div key={index} className="text-xs font-semibold border rounded-lg border-violet-800 px-2 py-1 hover:bg-violet-800 hover:text-white">
+                  {name}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -57,7 +61,7 @@ Project.propTypes = {
   githubLink: PropTypes.string.isRequired,
   demoLink: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired, 
-  codingLogos: PropTypes.object.isRequired,
+  codingNames: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Project;

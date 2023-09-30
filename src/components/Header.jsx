@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import tempLogo from "../assets/Worklogo/CapLogoBlack.png";
+
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,82 +36,6 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-gray-100 shadow-lg z-50">
       <nav className="container mx-auto flex items-center justify-between h-20">
-        <div className="flex items-center">
-          <Link
-            to="/"
-            className="text-black font-bold hover-animation relative"
-            onClick={scrollToTop}
-          >
-            <img src={tempLogo} alt="Cap logo" className="pl-10 w-40 h-auto" />
-          </Link>
-        </div>
-
-        <ul className="hidden md:flex space-x-16">
-          <li className="relative group group-hover:block">
-            <Link
-              to="/"
-              className="text-black font-extrabold  hover:text-blue-800 text-xs"
-              onClick={scrollToTop}
-            >
-              ABOUT ME
-            </Link>
-          </li>
-          <li className="relative group group-hover:block">
-            <Link
-              to="/"
-              className="text-black font-extrabold  hover:text-blue-800 text-xs"
-              onClick={scrollToTop}
-            >
-              EXPERIENCE
-            </Link>
-          </li>
-          <li className="relative group group-hover:block">
-            <Link
-              to="/"
-              className="text-black font-extrabold  hover:text-blue-800 text-xs"
-              onClick={scrollToTop}
-            >
-              PROJECTS
-            </Link>
-          </li>
-          <li className="relative group group-hover:block">
-            <Link
-              to="/"
-              className="text-black font-extrabold  hover:text-blue-800 text-xs md:mr-10"
-              onClick={scrollToTop}
-            >
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-
-        {/* Mobile Menu Button */}
-        <button
-          className={`md:hidden text-black font-bold mr-10 relative ${
-            mobileMenuOpen ? "open" : ""
-          } ${mobileMenuOpen ? "close" : ""}`}
-          onClick={toggleMobileMenu}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="white"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d={
-                mobileMenuOpen
-                  ? "M6 18L18 6M6 6l12 12"
-                  : "M4 6h16M4 12h16M4 18h16"
-              }
-            ></path>
-          </svg>
-        </button>
-
         {/* Mobile Menu */}
         <div
           className={`md:hidden fixed top-0 left-0 w-full h-full bg-gray-100 border-l border-gray-200 shadow-lg p-4 transform transition-transform duration-300 ${

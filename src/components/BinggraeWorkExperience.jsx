@@ -10,7 +10,7 @@ function CAPWorkExperience() {
         <div className="flex flex-col items-center md:w-1/3 justify-center md:mr-10">
           <img src={BinggraeLogo} alt="temp" className="w-48 h-auto rounded-lg object-fit" />
           <p className="mt-5 text-black text-xs font-semibold">June-2023 - Present</p>
-          <p className="mt-2 text-black text-xs font-semibold">Vancouver, B.C</p>
+          <p className="sm:mb-10 m:mb-0 mt-2 text-black text-xs font-semibold">Vancouver, B.C</p>
 
         </div>
         <div className="md:w-1/2">
