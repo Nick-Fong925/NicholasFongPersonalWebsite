@@ -1,7 +1,7 @@
-import "./App.css";
+import Landing from "./pages/Landing"
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  <Landing/>
 }
 
 export default App;
