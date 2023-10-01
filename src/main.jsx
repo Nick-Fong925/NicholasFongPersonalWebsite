@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <React.StrictMode>
       <Routes>
-      <Route path="/" element={<Landing />} />
+      <Route path="/NicholasFongPersonalWebsite/*" element={<Landing />} />
       </Routes>
     </React.StrictMode>
   </Router>
