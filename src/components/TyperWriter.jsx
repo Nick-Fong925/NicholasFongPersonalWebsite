@@ -7,7 +7,7 @@ const TypewriterText = () => {
   const [showBlinkingI, setShowBlinkingI] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const textArray = [
-    'Hi, my name is,',
+    'Hi, my name is',
     'Nicholas Fong.',
     'Aspiring Software Engineer.',
   ];

@@ -16,11 +16,11 @@ function CAPWorkExperience() {
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-5 text-violet-800">Binggrae</h2>
           <p className="text-black text-m font-bold">Full Stack Software Developer Intern</p>
-          <p className="text-black text-xs mt-2"> {`>`} Contributed to the creation of an e-commerce platform tailored to cater to the young adult age demographic while
+          <p className="text-black text-xs mt-2 font-semibold"> {`>`} Contributed to the creation of an e-commerce platform tailored to cater to the young adult age demographic while
 showcasing and marketing frozen goods to a potential customer base exceeding 700,000</p>
-          <p className="text-black text-xs mt-2"> {`>`} Created and deployed a MongoDB cloud database, to keep track of newsletter sign-ups and subscriber data for a
+          <p className="text-black text-xs mt-2 font-semibold"> {`>`} Created and deployed a MongoDB cloud database, to keep track of newsletter sign-ups and subscriber data for a
 digital marketing campaign, implementing data encryption to safeguard sensitive user information</p>
-          <p className="text-black text-xs mt-2"> {`>`} Implemented over 20 components using React, leveraging design systems and UI libraries to enhance consistency,
+          <p className="text-black text-xs mt-2 font-semibold"> {`>`} Implemented over 20 components using React, leveraging design systems and UI libraries to enhance consistency,
 code re-usability, and streamline the development process</p>
 
 

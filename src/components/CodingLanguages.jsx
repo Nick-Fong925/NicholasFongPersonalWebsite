@@ -58,7 +58,7 @@ function CodingLanguages() {
             }`}
           >
             <img src={languages.logo} alt={languages.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
-            <span className="md:text-xs lg:text-m">{languages.name}</span>
+            <span className="font-bold  md:text-xs lg:text-m">{languages.name}</span>
           </div>
         ))}
       </div>
@@ -75,7 +75,7 @@ function CodingLanguages() {
             }`}
           >
             <img src={framework.logo} alt={framework.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
-            <span className="md:text-xs lg:text-m">{framework.name}</span>
+            <span className="font-bold md:text-xs lg:text-m">{framework.name}</span>
           </div>
         ))}
       </div>
@@ -92,7 +92,7 @@ function CodingLanguages() {
             }`}
           >
             <img src={framework.logo} alt={framework.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
-            <span className="md:text-xs lg:text-m">{framework.name}</span>
+            <span className="font-bold  md:text-xs lg:text-m">{framework.name}</span>
           </div>
         ))}
       </div>
@@ -109,7 +109,7 @@ function CodingLanguages() {
             }`}
           >
             <img src={tool.logo} alt={tool.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
-            <span className="md:text-xs lg:text-m">{tool.name}</span>
+            <span className="font-bold md:text-xs lg:text-m">{tool.name}</span>
           </div>
         ))}
       </div>

@@ -30,7 +30,7 @@ function Project({ title, description, githubLink, demoLink, imgSrc, codingNames
         </div>
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-5 text-violet-800">{title}</h2>
-          <p className="text-black text-xs">{description}</p>
+          <p className="text-black text-xs font-semibold">{description}</p>
           <div className="flex space-x-4 mt-5 items-center">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
               <img src={GithubLogo} alt="Github Icon" className="w-6 h-6" />

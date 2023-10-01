@@ -13,11 +13,11 @@ function CAPWorkExperience() {
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-5 text-violet-800">UBC Campus Ambassador Program</h2>
           <p className="text-black text-m font-bold">Student Director of Technology</p>
-          <p className="text-black text-xs mt-2"> {`>`} Led UI design team by modeling and implementing high-fidelity mock-ups, using prototyping tools, and
+          <p className="text-black text-xs mt-2 font-semibold"> {`>`} Led UI design team by modeling and implementing high-fidelity mock-ups, using prototyping tools, and
 collaborating with cross-functional teams to deliver intuitive and visually appealing user interfaces</p>
-          <p className="text-black text-xs mt-2"> {`>`} Designed and implemented various features on the website including Stripe payment processing to ensure secure
+          <p className="text-black text-xs mt-2 font-semibold"> {`>`} Designed and implemented various features on the website including Stripe payment processing to ensure secure
 transactions and a contact system to schedule presentations and communicate with students</p>
-          <p className="text-black text-xs mt-2"> {`>`} Conducted regular maintenance and updates on the website to ensure optimal functionality, security, and user
+          <p className="text-black text-xs mt-2 font-semibold"> {`>`} Conducted regular maintenance and updates on the website to ensure optimal functionality, security, and user
 experience</p>
           <div className="flex space-x-4 mt-5 items-center">
    
