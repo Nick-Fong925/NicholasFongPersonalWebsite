@@ -39,7 +39,7 @@ function Projects() {
         "The Personal Portfolio Website project aims to create an online platform that showcases an individual's skills, achievements, and work samples. This website will serve as a digital resume, allowing the owner to present their professional identity to potential employers, clients, or collaborators. The primary goal is to create an engaging and user-friendly web presence that highlights the individual's talents and accomplishments.",
       githubLink: "https://github.com/Nick-Fong925/NicholasFongPersonalWebsite",
       imgSrc: PortfolioWebsite,
-      demoLink: "",
+      demoLink: "https://nick-fong925.github.io/NicholasFongPersonalWebsite/",
       codingNames: ["React.js", "Tailwind.js"], // Updated to an array of coding names
     },
   ];
