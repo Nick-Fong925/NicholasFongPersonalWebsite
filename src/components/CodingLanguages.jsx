@@ -47,18 +47,18 @@ function CodingLanguages() {
       {/* Buttons for Mobile */}
 
       {/* Languages Section */}
-      <div className="md:ml-5 lg:ml-16 w-full md:w-1/4">
+      <div className="ml-16 w-full md:w-1/4">
         <h2 className="mb-5 font-bold">Languages</h2>
-        {languages.map((lang, index) => (
+        {languages.map((languages, index) => (
           <div
             key={index}
-            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+            className={`mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
               // Add classes for smaller logos on md screens
               index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
             }`}
           >
-            <img src={lang.logo} alt={lang.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
-            <span className="md:text-xs lg:text-m">{lang.name}</span>
+            <img src={languages.logo} alt={languages.name} className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-4" />
+            <span className="md:text-xs lg:text-m">{languages.name}</span>
           </div>
         ))}
       </div>
@@ -69,7 +69,7 @@ function CodingLanguages() {
         {frontendFrameworks.map((framework, index) => (
           <div
             key={index}
-            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+            className={`mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
               // Add classes for smaller logos on md screens
               index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
             }`}
@@ -86,7 +86,7 @@ function CodingLanguages() {
         {backendFrameworks.map((framework, index) => (
           <div
             key={index}
-            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+            className={`mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
               // Add classes for smaller logos on md screens
               index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
             }`}
@@ -103,7 +103,7 @@ function CodingLanguages() {
         {developerTools.map((tool, index) => (
           <div
             key={index}
-            className={`ml-5 mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
+            className={`mt-4 md:mt-10 flex items-center mb-2 md:mb-4 font-semibold ${
               // Add classes for smaller logos on md screens
               index > 0 ? 'md:ml-1' : '' // Adjust the margin between logos
             }`}
