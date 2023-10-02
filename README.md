@@ -1,5 +1,7 @@
 # Personal Portfolio Website
 
+![Screenshot 2023-10-01 210338](https://github.com/Nick-Fong925/NicholasFongPersonalWebsite/assets/120824415/45793e0e-3253-4c77-96ee-865719e85591)
+
 **Welcome to my personal portfolio website repository!** This project showcases my web development skills and serves as an online hub for sharing my work, projects, and experiences.
 
 # Features
