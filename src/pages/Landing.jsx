@@ -5,6 +5,7 @@ import Contact from "../components/Contact2";
 import Projects from "../components/Projects";
 import Info from "../components/Info";
 import NicholasFongResume from "../assets/Resume/Nicholas_Fong_Resume.pdf";
+import MobileHeader from "../components/MobileHeader";
 
 function Landing() {
   const [activeSection, setActiveSection] = useState("about");
@@ -61,7 +62,7 @@ function Landing() {
 
   return (
     <div className="flex flex-col items-center">
-
+      <MobileHeader/>
       <div className="max-w-screen-lg w-full">
         {/* Sidebar */}
         {!isMobile && (

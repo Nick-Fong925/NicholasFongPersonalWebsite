@@ -11,7 +11,7 @@ function Info() {
     <>
      <div className="flex flex-col md:flex-row items-center mt-10 md:mt-20 mb-10">
   {/* Circular border for the photo */}
-  <div className="ml-2 w-48 h-48 px-2 mb-10 py-2 md:w-56 md:h-58 rounded-full border-4 border-gray-300 overflow-hidden">
+  <div className="w-48 h-48 mb-10 ml-2 py-2 md:w-56 md:h-58 rounded-full border-4 border-gray-300 overflow-hidden">
     <img
       src={MyPhoto}
       alt="Nicholas Fong"
