@@ -61,11 +61,11 @@ const TypewriterText = () => {
 
   return (
     <div className="md:ml-10">
-      <h2 className="mb-5 font-semibold text-lg md:text-xl">{line1}</h2>
-      <p className="text-3xl mb-5 font-bold text-violet-800 md:text-5xl">{line2}</p>
-      <p className="text-2xl font-bold md:text-4xl">
-        {line3}
-      </p>
+    <h2 className="mb-5 font-semibold text-lg md:text-xl">{line1}</h2>
+<p className="text-3xl mb-5 font-bold text-violet-800 md:text-5xl">{line2}</p>
+<p className="text-2xl font-bold md:text-4xl w-full">
+  {line3}
+</p>
     </div>
   );
 };

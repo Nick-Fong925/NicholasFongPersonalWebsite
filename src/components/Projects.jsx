@@ -13,7 +13,7 @@ function Projects() {
       githubLink: "https://github.com/Nick-Fong925/CAPWeb",
       imgSrc: CAP,
       demoLink: "https://nick-fong925.github.io/CAPWeb/",
-      codingNames: ["React.js", "Tailwind.js"], // Updated to an array of coding names
+      codingNames: ["React.js", "TailwindCSS"], // Updated to an array of coding names
     },
     {
       title: "BiteBook",
@@ -22,7 +22,7 @@ function Projects() {
       githubLink: "https://github.com/Nick-Fong925/BiteBook",
       demoLink: "",
       imgSrc: BiteBook,
-      codingNames: ["React.js", "Tailwind.js", "Express.js", "MongoDB"], // Updated to an array of coding names
+      codingNames: ["React.js", "TailwindCSS", "Express.js", "MongoDB"], // Updated to an array of coding names
     },
     {
       title: "Daily Boost",
@@ -31,7 +31,7 @@ function Projects() {
       githubLink: "https://github.com/myung03/produHacks",
       imgSrc: DailyBoost,
       demoLink: "",
-      codingNames: ["React.js", "Tailwind.js", "Express.js", "MongoDB"], // Updated to an array of coding names
+      codingNames: ["React.js", "TailwindCSS", "Express.js", "MongoDB"], // Updated to an array of coding names
     },
     {
       title: "Portfolio Website",
@@ -40,7 +40,7 @@ function Projects() {
       githubLink: "https://github.com/Nick-Fong925/NicholasFongPersonalWebsite",
       imgSrc: PortfolioWebsite,
       demoLink: "https://nick-fong925.github.io/NicholasFongPersonalWebsite/",
-      codingNames: ["React.js", "Tailwind.js"], // Updated to an array of coding names
+      codingNames: ["React.js", "TailwindCSS"], // Updated to an array of coding names
     },
   ];
 
