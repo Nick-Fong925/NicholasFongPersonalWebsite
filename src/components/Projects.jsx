@@ -15,6 +15,7 @@ function Projects() {
       demoLink: "https://nick-fong925.github.io/CAPWeb/",
       codingNames: ["React.js", "TailwindCSS"], // Updated to an array of coding names
     },
+    /*
     {
       title: "BiteBook",
       description:
@@ -24,6 +25,7 @@ function Projects() {
       imgSrc: BiteBook,
       codingNames: ["React.js", "TailwindCSS", "Express.js", "MongoDB"], // Updated to an array of coding names
     },
+    */
     {
       title: "Daily Boost",
       description:

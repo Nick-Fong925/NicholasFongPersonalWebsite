@@ -149,8 +149,6 @@ function Landing() {
                   Resume
                 </li>
               </a>
-              {/* Sidebar content */}
-              {/* ... */}
             </ul>
           </div>
         )}
@@ -160,10 +158,12 @@ function Landing() {
             <Info />
           </div>
           <div id="work-experience-section">
+            <h2 className="font-bold p-5 text-violet-800 text-3xl">Experiences</h2>
             <BinggraeWorkExperience />
             <WorkExperience />
           </div>
           <div id="projects-section">
+          <h2 className="font-bold p-5 text-violet-800 text-3xl">Projects</h2>
             <Projects />
           </div>
           <div id="contact-section">
